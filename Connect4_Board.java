@@ -1,4 +1,5 @@
 package com.mycompany.game;
+
 /**
  * @author Doaa Mahdy Mohamed
  * @LastModification 2023 - 2 -17
@@ -10,8 +11,8 @@ public class Connect4_Board extends Board {
     row = 6;
     col = 7;
     grid = new char[row+6][col+6];
-    for(int i = row;i>=0;i--){
-           for(int j = 0;j <= col;j++)
+    for(int i = 0;i< row+6;i++){
+           for(int j = 0;j < col + 6;j++)
            {
                grid[i][j] = ' ';   
            }
