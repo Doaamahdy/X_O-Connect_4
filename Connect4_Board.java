@@ -1,5 +1,4 @@
 package com.mycompany.game;
-
 /**
  * @author Doaa Mahdy Mohamed
  * @LastModification 2023 - 2 -17
@@ -11,8 +10,8 @@ public class Connect4_Board extends Board {
     row = 6;
     col = 7;
     grid = new char[row+6][col+6];
-    for(int i = 0;i< row+6;i++){
-           for(int j = 0;j < col + 6;j++)
+    for(int i = 0;i < row + 6;i++){
+           for(int j = 0;j < col+6;j++)
            {
                grid[i][j] = ' ';   
            }
@@ -62,6 +61,11 @@ public class Connect4_Board extends Board {
                     return true;
                 else if(grid[i][j] == grid[i+1][j+1] && grid[i+1][j+1] == grid[i+2][j+2] && grid[i+2][j+2] == grid[i+3][j+3] && grid[i][j] == symbol)
                     return true;
+                if(j >= 4)
+                {
+                if(grid[i][j] == grid[i+1][j-1] && grid[i+1][j-1] == grid[i+2][j-2] && grid[i+2][j-2] == grid[i+3][j-3] && grid[i][j] == symbol)
+                    return true;
+                }
             }
         }
         return false;
