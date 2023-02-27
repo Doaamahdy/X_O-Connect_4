@@ -36,7 +36,6 @@ public class GameManager {
         Connect4_Board b2 = new Connect4_Board();
         while(true)
         {
-        
         switch(ch)
         {
             

@@ -51,9 +51,9 @@ public class Connect4_Board extends Board {
 
     @Override
     boolean is_winner(char symbol) {
-        for(int i = 0;i<row;i++)
+        for(int i = 0;i<=row;i++)
         {
-            for(int j = 0;j<col;j++)
+            for(int j = 0;j<=col;j++)
             {
                 if(grid[i][j] == grid[i][j+1] && grid[i][j+1] == grid[i][j+2] && grid[i][j+2] == grid[i][j+3] && grid[i][j] == symbol)
                     return true;

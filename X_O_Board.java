@@ -1,7 +1,5 @@
 package com.mycompany.game;
 
-import java.util.Scanner;
-
 /**
  * @author Doaa Mahdy Mohamed
  * @LastModification 2023 - 2 -17
